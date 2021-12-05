@@ -15,8 +15,8 @@ HI! the code will be available soon. Meanwhile, enjoy our [paper](https://arxiv.
 
 ## Performance
 ### S3DIS area 5
-|Method | OA    |       mIoU    |       mAcc    | ceiling       | floor         | wall          | beam          | column        | window        | door          | table         | chair         | sofa          | bookcase      | board         | clutter        |
-|:---   | :---: |    :---:      |       :---:   | :---:         | :---:         | :---:         | :---:         | :---:         | :---:         |  :---:           | :---:         | :---:         | :---:         | :---:         | :---:         | :---:          |
+|Method |       mIoU    |       mAcc    | ceiling       | floor         | wall          | beam          | column        | window        | door          | table         | chair         | sofa          | bookcase      | board         | clutter        |
+|:---   |    :---:      |       :---:   | :---:         | :---:         | :---:         | :---:         | :---:         | :---:         |  :---:           | :---:         | :---:         | :---:         | :---:         | :---:         | :---:          |
 |PointNet    | 41.1 | 49.0   | 88.8    | 97.3  | 69.8 | **0.1**  | 3.9    | 46.3   | 10.8 | 59.0    | 52.6  | 5.9  | 40.3     | 26.4  | 33.2     |
 |SegCloud   | 48.9 | 57.4 | 90.1    | 96.1  | 69.9 | 0.0    | 18.4   | 38.4   | 23.1 | 70.4  | 75.9  | 40.9 | 58.4     | 13.0    | 41.6     |
 |FPConv       | 62.7 | 68.9 | **94.6**    | 98.5  | 80.9 | 0.0    | 19.1   | 60.1   | 48.9 | 80.6  | 88.0    | 53.2 | 68.4     | 68.2  | 54.9     |
@@ -132,6 +132,7 @@ go do docker and execute `sudo docker build .`
 
 execute the following command:
 `docker run  -it --rm --gpus all -v $(path_to_the_repo)/transform_registration:/workspace/ -u $(id -u):$(id -g) $DOCKER_ID bash scripts/$dataset/$script.sh`
+
 
 
 
